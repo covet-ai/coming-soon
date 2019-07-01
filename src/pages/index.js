@@ -4,7 +4,6 @@ import { Helmet } from "react-helmet"
 
 import Title from "../components/Title"
 import Message from "../components/Message"
-import Social from "../components/Social"
 
 import "../styles/main.css"
 import Patterns from "../styles/patterns.json"
@@ -37,7 +36,6 @@ const IndexPage = ({ data }) => {
       </Helmet>
       <Title title={title} titleFont={titleFont} color={color} />
       <Message message={message} messageFont={messageFont} color={color} />
-      <Social social={social} color={color} />
     </div>
     )
 }
@@ -54,7 +52,6 @@ query {
       color
       titleFont
       messageFont
-      social
     }
   }
 }
